@@ -40,3 +40,10 @@ void MainWindow::on_radioButton_clicked(bool checked)
     }
 }
 
+
+void MainWindow::on_pushButton_2_clicked()
+{
+    ui->menuwegved->setTitle(ui->pushButton_2->text());
+    setWindowTitle(ui->pushButton_2->text());
+}
+

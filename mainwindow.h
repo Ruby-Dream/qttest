@@ -25,6 +25,8 @@ private slots:
 
     void on_radioButton_clicked(bool checked);
 
+    void on_pushButton_2_clicked();
+
 private:
     Ui::MainWindow *ui;
     QStringListModel *m;
