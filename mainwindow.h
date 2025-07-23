@@ -1,7 +1,10 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
-
+#include <QStringListModel>
+#include <QStringList>
+#include <QModelIndex>
 #include <QMainWindow>
+#include <QAbstractItemView>
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -17,7 +20,14 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+private slots:
+    void on_pushButton_clicked();
+
+    void on_radioButton_clicked(bool checked);
+
 private:
     Ui::MainWindow *ui;
+    QStringListModel *m;
+    QStringList s;
 };
 #endif // MAINWINDOW_H
